@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price Range Filter</title>
+  <link rel="stylesheet" href="prize.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Filter Products by Price</h1>
+    <div class="filter">
+      <label for="priceRange">Price Range: </label>
+      <input type="range" id="priceRange" min="0" max="1000" step="50" value="1000">
+      <span id="priceValue">$1000</span>
+    </div>
+    <div class="products">
+      <div class="product" data-price="150">
+        <h2>Product A</h2>
+        <p>Price: $150</p>
+      </div>
+      <div class="product" data-price="300">
+        <h2>Product B</h2>
+        <p>Price: $300</p>
+      </div>
+      <div class="product" data-price="500">
+        <h2>Product C</h2>
+        <p>Price: $500</p>
+      </div>
+      <div class="product" data-price="750">
+        <h2>Product D</h2>
+        <p>Price: $750</p>
+      </div>
+    </div>
+  </div>
+  <script src="prize.js"></script>
+</body>
+</html>
